@@ -1,0 +1,167 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Color Theme */
+:root {
+    --primary-color: #002366; /* Blue */
+    --secondary-color: #FFD700; /* Golden */
+    --text-light: #fff;
+    --text-dark: #333;
+}
+
+/* Header Styles */
+/* Header Styles */
+header {
+    background: var(--primary-color);
+    color: var(--text-light);
+    padding: 1rem 0;
+    text-align: center;
+}
+
+/* Ensures the header title aligns properly */
+header h1 {
+    margin-bottom: 0;
+}
+
+/* Navigation Bar Layout */
+nav {
+    display: flex;
+    justify-content: center; /* This centers all content inside the nav */
+    align-items: center;
+    position: relative;
+}
+
+/* Logo alignment */
+nav .logo {
+    position: absolute;
+    left: 0; /* Position the logo on the left side */
+    display: flex;
+    align-items: center;
+}
+
+nav .logo img {
+    height: 50px;
+    width: auto;
+}
+
+/* Navigation links */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* This centers the links */
+    margin: 0;
+    padding: 0;
+}
+
+/* Individual list items */
+nav ul li {
+    margin: 0 20px;
+}
+
+/* Link styling */
+nav ul li a {
+    color: var(--text-light);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Link hover effect */
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    background: url('hero.jpg') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-light);
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Section Styles */
+.section {
+    padding: 3rem 0;
+}
+
+.section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--primary-color);
+}
+
+/* Alumni Section */
+.alumni-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.alumni-card {
+    background: var(--secondary-color);
+    padding: 1rem;
+    text-align: center;
+    border-radius: 8px;
+    width: 250px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.alumni-card img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.alumni-card h3, .alumni-card p {
+    color: var(--primary-color);
+}
+
+/* Footer */
+footer {
+    background: var(--primary-color);
+    color: var(--text-light);
+    text-align: center;
+    padding: 2rem 0;
+}
+
+footer h2 {
+    margin-bottom: 1rem;
+}
+
+/* VIP Page */
+.vip-card {
+    background: var(--primary-color);
+    color: var(--text-light);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.vip-card img {
+    width: 200px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
